@@ -9,3 +9,15 @@
     flex-wrap: wrap;
     font-size: 8px;
 }
+
+.pixel {
+    transition-duration: 5s;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+
+}
+
+.pixel:hover {
+    background-color: red;
+    transition-duration: 200ms;
+}

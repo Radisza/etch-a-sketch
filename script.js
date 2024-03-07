@@ -3,9 +3,7 @@ function set_square_size(element, size) {
     element.style.height = size + 'px';
 }
 
-
 function new_board(max_board_size, pixel_size) {
-    console.log("HELLO WORLD");
     let pixels_per_row = Math.floor(max_board_size / pixel_size);
     let new_board_size = pixels_per_row*pixel_size;
     
@@ -18,9 +16,9 @@ function new_board(max_board_size, pixel_size) {
     
     for (let i = 0; i < pixels_per_row*pixels_per_row; i++) {
         let pixel = document.createElement('div');
+        pixel.classList.add('pixel');
         set_square_size(pixel, pixel_size);
-        pixel.style.border = '1px solid lightgrey';
-        pixel.style.boxSizing = 'border-box';
+
         pixel.textContent = i;
 
         board.appendChild(pixel);
