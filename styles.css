@@ -18,13 +18,12 @@
 }
 
 .pixel {
-    transition-duration: 5s;
+    transition: background-color 1.5s;
     box-sizing: border-box;
 }
 
 .pixel:hover {
-    background-color: red;
-    transition-duration: 200ms;
+    transition-duration: 0.1s;
 }
 
 button {
