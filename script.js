@@ -19,8 +19,6 @@ function new_board(max_board_size, pixels_per_row) {
         pixel.classList.add('pixel');
         set_square_size(pixel, pixel_size);
 
-        pixel.textContent = i;
-
         board.appendChild(pixel);
     }
 }
